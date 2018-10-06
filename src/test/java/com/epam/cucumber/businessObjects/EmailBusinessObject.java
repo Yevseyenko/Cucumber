@@ -15,8 +15,6 @@ public class EmailBusinessObject {
     public WebDriver driver;
 
     public EmailBusinessObject(WebDriver driver) {
-        //DriverConfiguration config = new DriverConfiguration();
-        //  this.driver = config.configureDriver();
         this.driver = driver;
         this.gmailEmailPage = new GmailEmailPage(driver);
         this.gmailLoginPage = new GmailLoginPage(driver);
